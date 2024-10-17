@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background-color: #FFA500;
+  padding: 20px;
+  color: #282c34;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.left-component,
+.right-component {
+  width: 50%; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+.entity-component {
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 15px; 
+}
+
+.entity-component label {
+  margin-right: 10px; 
+  width: 150px; 
+}
+
+.entity-component input {
+  padding: 8px;
+  flex: 1; 
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column; 
+  }
+
+  .left-component,
+  .right-component {
+    width: 100%; 
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .entity-component label {
+    margin-right: 0; 
+    margin-bottom: 5px; 
+  }
+  .label {
+    font-weight: bold; 
+    color: #FFA500; 
+    
+  }
+  
+}
